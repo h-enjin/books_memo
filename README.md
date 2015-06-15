@@ -1,25 +1,25 @@
-Title
-	books_memo
-Description
+#books_memo
+
+##Description
 	欲しい本をメモする
-Function
+##Function
 	・本のタイトルをDBに保存し、管理する
-Future
+##Future
 	・Amazonもしくは楽天から本を検索し、URLへリダイレクトできるようにする。
 	・発売日をチェックする。
 
 
-Language
+##Language
 	PHP5.6.10
 
-DataBase
+##DataBase
 	MySQL5.6.25
 
-CSS Framework
+##CSS Framework
 	Honoka
 
 
-DB定義
+##DB定義
 	ユーザテーブル(users)
 		id
 		name
