@@ -1,6 +1,28 @@
 <?php
 // データの保存や削除など
 class DAO {
+	
+	// DBから取得
+	function pdo($sql) {
+		try {
+			$pdo = new PDO(
+				'mysql:dbname=;host=localhost;charset=utf8',
+				'root',
+				'',
+				array(
+					PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+					PDO::ATTR_EMULATE_PREPARES => false,
+				)
+			);
+		} catch (PDOException $e) {
+			echo 'error' . $e->getMessage;
+			die();
+		}
+		$stmt = $pdo->query($sql);
+		$items = $stmt->fetchAll(PDO::FETCH_ASSOC);
+		return $items;
+	}
+	
 	// ユーザ登録関数
 	function registerUser($username, $password, $email) {
 		$sql = "INSERT INTO users (name, password, email) VALUES (:name, :password, :email)";

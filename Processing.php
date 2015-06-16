@@ -3,6 +3,6 @@
 class Processing {
 	// 特殊文字対策
 	function h($strings) {
-		return htmlspecialchars($strings, ENT_QUOTES);
+		return htmlspecialchars($strings, ENT_QUOTES, 'UTF-8');
 	}
 }
