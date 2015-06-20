@@ -26,8 +26,11 @@
 		</div>
 	</nav>
 	<div class="container">
-		<h1>Books MEMO!</h1>
-		<p>あの欲しかった本なんだっけ・・・？</p>
+		<h1>本を追加</h1>
+		<form action="" method="POST">
+			<input type="text" name="b_title">
+			<input type="submit" value="追加">
+		</form>
 	</div>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
