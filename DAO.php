@@ -1,12 +1,14 @@
 <?php
 // データの保存や削除など
 class DAO {
+	private $pdo;
 	
 	// DBから取得
 	function pdo($sql) {
+		$pdo;
 		try {
 			$pdo = new PDO(
-				'mysql:dbname=;host=localhost;charset=utf8',
+				'mysql:dbname=niko;host=localhost;charset=utf8',
 				'root',
 				'',
 				array(
@@ -15,12 +17,20 @@ class DAO {
 				)
 			);
 		} catch (PDOException $e) {
-			echo 'error' . $e->getMessage;
+			echo 'error' . $e->getMessage();
 			die();
 		}
-		$stmt = $pdo->query($sql);
-		$items = $stmt->fetchAll(PDO::FETCH_ASSOC);
-		return $items;
+		
+			$stmt = $pdo->query($sql);
+			$items = $stmt->fetchAll(PDO::FETCH_ASSOC);
+			return $items;
+	}
+	
+	// 引っ張ってくる
+	function getData() {
+		$sql = "SELECT * FROM messages";
+		$results = $this->pdo($sql);
+		return $results;
 	}
 	
 	// ユーザ登録関数
