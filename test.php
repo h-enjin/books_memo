@@ -22,4 +22,8 @@ $sql = "select * from messages";
 // $sql = "insert into messages (username, message) value ('enjin', '日本語テスト')";
 
 $test = $db->pdo($sql);
-var_dump($test);
+echo "num username message\n";
+foreach ($test as $obj) {
+	echo $obj["id"] . " " . $obj["username"] . " " . $obj["message"] . "\n";
+}
+// var_dump($test);
