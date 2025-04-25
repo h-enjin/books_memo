@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Books MEMO</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<!-- [if lt IE 9]>
-		<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif] -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Books MEMO</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-					<span class="sr-only">トグルメニュー</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="/">Books MEMO</a>
-			</div>
-		</div>
-	</nav>
-	<div class="container">
-		<h1>Books MEMO!</h1>
-		<p>あの欲しかった本なんだっけ・・・？</p>
-	</div>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                        <a class="navbar-brand" href="/">Books MEMO</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="/">ホーム</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a class="nav-link" href="list.php">本の一覧</a>
+                                        </li>
+                                </ul>
+                        </div>
+                </div>
+        </nav>
+        <div class="container">
+                <h1>Books MEMO!</h1>
+                <p>あの欲しかった本なんだっけ・・・？</p>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
